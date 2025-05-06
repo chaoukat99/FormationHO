@@ -455,3 +455,37 @@ if(localStorage.getItem("bgcolor") != null){
 }
 
 
+
+// BOM
+
+// alert
+
+
+// prompt
+// confirm
+
+
+// setTimeout
+
+
+// setInterval 
+
+
+// history
+
+
+// location
+
+// window.location.href="https://www.google.com"
+
+
+// Localstorage 
+
+
+
+
+
+
+
+
+
