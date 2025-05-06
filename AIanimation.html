@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+<body>
+    <p>
+
+    </p>
+
+
+    <script>
+        let my_text ="hello thsi si only a test text hello thsi si only a test text hello thsi si only a test text hello thsi si only a test text hello thsi si only a test text";
+
+       const arr=my_text.split(""); // ['h','e']
+            let i=0;
+            
+
+
+     const Inter=setInterval(()=>{
+         if(i==arr.length-1){
+           clearInterval(Inter);
+        }
+
+           p.innerHTML+=arr[i];
+           i++;
+          
+    },60)
+
+        let p=document.querySelector("p");
+      
+        
+
+
+
+    </script>
+</body>
+</html>

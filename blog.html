@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <article>
+        <h1>HEllo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eligendi velit doloremque odio magnam itaque quibusdam! Repellat magni cumque quisquam placeat alias totam quae nesciunt corporis officiis nam, ea perferendis minus minima! Error dignissimos tempore, nesciunt possimus nisi, ducimus vel sit porro exercitationem explicabo quaerat aliquam corporis voluptatibus incidunt ratione nemo, assumenda dolorem! Veritatis similique expedita iure provident consequatur recusandae incidunt odit, a minima vero, suscipit alias asperiores excepturi molestiae sint doloribus dolores pariatur quasi perspiciatis mollitia at? Aspernatur corrupti tempora, ad necessitatibus dignissimos odio reiciendis. In rem omnis commodi, eveniet numquam ad repellat quisquam, consequatur harum culpa rerum. Incidunt?</p>
+        <button>Share This Post</button>
+    </article>
+    <article>
+        <h1>Hello2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button>Share This Post</button>
+    </article>
+    <article>
+        <h1>HEllo 3</h1>
+        <p>Lorem ipsum dolor sit jshdjshsdj jdhz</p>
+        <button>Share This Post</button>
+    </article>
+    <article>
+        <h1>HEllo 4</h1>
+        <p>Lorem ipsum dolor sit jshdjshsdj jdhz</p>
+        <button>Share This Post</button>
+    </article>
+
+
+    <script>
+
+        function SharePost(btn){
+           
+            
+               let p=btn.previousElementSibling.innerHTML;
+               let h1=btn.previousElementSibling.previousElementSibling.innerHTML;
+               console.log(p);
+               console.log(h1);
+                navigator.share({
+                    title:"Article de santé",
+                    text:p,
+                    url:"https://www.google.com"
+                })
+          
+
+        }
+       
+
+        let buttons=document.querySelectorAll("button");
+
+        
+            buttons.forEach((elm)=>{
+            
+
+                elm.addEventListener("click",()=>{
+                
+                    SharePost(elm);
+                })
+            
+            })
+    </script>
+</body>
+</html>

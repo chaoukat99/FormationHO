@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <input type="number">
+    <div id="message"></div>
+    <button>Add</button>
+    <button>SHow Max</button>
+
+    <script>
+        let  input=document.querySelector("input");
+        let  msg=document.querySelector("#message");
+        let buttons=document.querySelectorAll("button");
+        let arr=[] ;
+        buttons[0].onclick=()=>{
+        
+        arr.push(+input.value);
+        input.value="";
+        }
+
+        buttons[1].onclick=()=>{
+        
+            let maximum = Math.max(...arr);
+
+            
+        msg.innerHTML=`The maximum is : <b>${maximum}<b>`
+        
+        }
+
+
+    </script>
+
+
+</body>
+</html>
